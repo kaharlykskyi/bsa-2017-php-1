@@ -4,9 +4,20 @@ namespace BinaryStudioAcademy\Task2;
 
 class EmojiGenerator
 {
+    const EMOJI = [
+        '😀',
+        '😃',
+        '😄',
+        '😁',
+        '😆',
+        '😅',
+        '😂',
+    ];
+
     public function generate()
     {
-        //TODO: Implement emoji generator using yield
-        return 'sddd';
+        foreach (self::EMOJI as $e) {
+            yield $e;
+        }
     }
 }
