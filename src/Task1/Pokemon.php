@@ -7,3 +7,4 @@ interface Pokemon
     public function battleCry(): string;
     public function imageUrl(): string;
 }
+
