@@ -10,6 +10,10 @@ abstract class AbstractPokemon implements Pokemon
 
     public function imageUrl(): string
     {
+        //фикс проблемы с именем Пикачу. Класс pichachu , а ссылка на картинку .../pikachu.jpg
+        if ($this->getName() === 'Pickachu') {
+            return self::BASE_PICTURE . 'pikachu.jpg';
+        }
         return self::BASE_PICTURE . lcfirst($this->getName()) . '.jpg';
     }
 }

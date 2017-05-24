@@ -12,4 +12,5 @@ class Pickachu extends AbstractPokemon
     {
         return 'Pika-Pika!';
     }
+
 }
